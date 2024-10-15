@@ -25,12 +25,10 @@ header .containerBrand {
   width: 20%;
   min-width: 200px;
   height: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 header .containerBrand img {
-  transform: scale(0.7);
+  transform: scale(0.6);
 }
 
 /* containerList */
@@ -51,9 +49,8 @@ header .containerItemList ul {
 
 header .containerItemList ul li {
   text-decoration: none;
-
   margin: 0 0 0 50px;
-  color: var(--color-txt-nav);
+  color: black;
   font-size: large;
 }
 

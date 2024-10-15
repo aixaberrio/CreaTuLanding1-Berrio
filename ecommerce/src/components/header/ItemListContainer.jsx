@@ -1,13 +1,19 @@
+import { Link } from "react-router-dom";
+
 const ItemListContainer = (props) => {
   return (
     <ul>
-      <li>{props.itemUno}</li>
+      <li>
+        <Link to="category/camionetas">{props.itemUno}</Link>
+      </li>
 
-      <li>{props.itemDos}</li>
+      <li>
+        <Link to="category/autos">{props.itemDos}</Link>
+      </li>
 
-      <li>{props.itemTres}</li>
-
-      <li>{props.itemCuatro}</li>
+      <li>
+        <Link to="category/repuestos">{props.itemTres}</Link>
+      </li>
     </ul>
   );
 };

@@ -13,8 +13,7 @@ const NavBar = () => {
         <ItemListContainer
           itemUno="Camionetas"
           itemDos="Autos"
-          itemTres="Motos"
-          itemCuatro="Repuestos"
+          itemTres="Repuestos"
         />
       </nav>
 
