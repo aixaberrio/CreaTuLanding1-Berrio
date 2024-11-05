@@ -5,8 +5,6 @@
 }
 
 .cardItem {
-  height: 390px;
-  width: 300;
   padding: 10px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -16,14 +14,14 @@
 }
 
 /* imagen */
-.cardItem .cardImg {
+.cardItem .cardImag {
   display: flex;
   justify-content: center;
 }
 
-.cardItem .cardImg img {
-  height: 100px;
-  width: 80px;
+.cardItem .cardImag img {
+  height: 300px;
+  width: 350px;
   transform: scale(0.8);
 }
 /* descripcion */
