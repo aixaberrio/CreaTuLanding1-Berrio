@@ -5,8 +5,8 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 800px;
+  width: 500px;
+
   background-color: white;
   right: 30px;
   top: 80px;
@@ -44,7 +44,7 @@
 }
 
 .cart .containerItemsCart .emptyCart {
-  color: #5b00fb;
+  color: black;
   font-size: 25px;
   width: 100%;
   height: 100%;
@@ -64,14 +64,14 @@
   height: 55px;
   width: 85%;
   border-radius: 50px;
-  background-color: #5b00fb;
-  color: white;
+  background-color: grey;
+  color: black;
   font-size: 20px;
   border: none;
 }
 
 .cart .TerminarCompra .terminar {
-  background-color: #5b00fb;
+  background-color: grey;
   height: 55px;
   width: 88%;
   border: none;
@@ -79,12 +79,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 .cart .TerminarCompra .clear {
-  background-color: #5b00fb;
+  background-color: white;
   height: 55px;
   width: 55px;
   border-radius: 50%;

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Centra verticalmente el contenido en la pantalla completa */
+  min-height: 100vh;
   padding-top: 100px;
 }
 
@@ -16,26 +16,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espacio entre los contenedores */
-  width: 80%; /* Ajusta el ancho según sea necesario */
-  max-width: 1200px; /* Evita que el contenido se extienda demasiado en pantallas grandes */
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
 }
 
 /* containerLeft */
 .containerLeft,
 .containerRigth {
-  width: 50%; /* Ajusta el ancho de cada columna */
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centra el texto dentro de cada contenedor */
+  text-align: center;
 }
 
 /* Estilo de Imagen */
 .containerLeft img {
   width: 100%;
-  max-width: 300px; /* Tamaño máximo de la imagen */
+  max-width: 300px;
   object-fit: cover;
 }
 

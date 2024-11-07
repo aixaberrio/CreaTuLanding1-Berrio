@@ -34,7 +34,7 @@ const ContainerCardItems = () => {
           <CardItem
             key={product.id}
             id={product.id}
-            imagen={product.imageProduct}
+            imageProduct={product.imageProduct}
             title={product.title}
             cantidad={product.stock}
             precio={product.price}
