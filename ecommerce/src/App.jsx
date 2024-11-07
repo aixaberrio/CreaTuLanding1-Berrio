@@ -1,18 +1,27 @@
 import "./App.css";
 import NavBar from "./components/header/NavBar";
 import ContainerCardItems from "./components/items/ContainerCardItems";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DetailsItems from "./components/items/detailsItems";
+import { createContext, useState } from "react";
+import ProviderContextoListCart from "./components/items/providerContextoListCart";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ContainerCardItems />} />
-        <Route path="/item/:id" element={<ContainerCardItems />} />
-        <Route path="/category/:idCategory" element={<ContainerCardItems />} />
-      </Routes>
-    </BrowserRouter>
+    <ProviderContextoListCart>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ContainerCardItems />} />
+          <Route path="/item/:idItem" element={<DetailsItems />} />
+          <Route
+            path="/category/:idCategory"
+            element={<ContainerCardItems />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </ProviderContextoListCart>
   );
 }
 

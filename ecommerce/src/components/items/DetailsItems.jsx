@@ -6,7 +6,7 @@ import fetchSimultion from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MoonLoader from "react-spinners/ClipLoader";
+import Cliploader from "react-spinners/ClipLoader";
 
 const DetailsItem = () => {
   const [datos, setDatos] = useState([]);
@@ -26,12 +26,12 @@ const DetailsItem = () => {
   return (
     <div className="detailsItem">
       {datos.length === 0 ? (
-        <MoonLoader color="#5b00fb" />
+        <Cliploader color="#5b00fb" />
       ) : (
         datos.map((items) => (
           <div key={items.id} className="itemContainer">
             <div className="containerLeft">
-              <Image imagen={items.imageProduct} />
+              <Image imagen={items.imageProduct.firtsImage} />
             </div>
 
             <div className="containerRigth">

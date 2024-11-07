@@ -4,6 +4,7 @@ import productos from "../../utils/products.jsx";
 import { useState, useEffect } from "react";
 import "../../styles/containerCardItems.css";
 import { useParams } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 const ContainerCardItems = () => {
   const [datos, setDatos] = useState([]);
@@ -23,15 +24,23 @@ const ContainerCardItems = () => {
 
   return (
     <div className="containerCardItems">
-      {datos.map((product) => (
-        <CardItem
-          key={product.id}
-          imagen={product.imageProduct}
-          title={product.title}
-          cantidad={product.stock}
-          precio={product.price}
-        />
-      ))}
+      {datos.length === 0 ? (
+        <div className="containerSpinner">
+          {" "}
+          <ClipLoader color="#5b00fb" />{" "}
+        </div>
+      ) : (
+        datos.map((product) => (
+          <CardItem
+            key={product.id}
+            id={product.id}
+            imagen={product.imageProduct.firtsImage}
+            title={product.title}
+            cantidad={product.stock}
+            precio={product.price}
+          />
+        ))
+      )}
     </div>
   );
 };
