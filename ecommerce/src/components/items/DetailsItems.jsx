@@ -31,7 +31,7 @@ const DetailsItem = () => {
         datos.map((items) => (
           <div key={items.id} className="itemContainer">
             <div className="containerLeft">
-              <Image imagen={items.imageProduct.firtsImage} />
+              <Image imagen={items.imageProduct} />
             </div>
 
             <div className="containerRigth">

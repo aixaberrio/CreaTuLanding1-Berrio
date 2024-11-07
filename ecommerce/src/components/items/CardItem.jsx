@@ -9,7 +9,7 @@ import cart from "../../img/cart-fast.svg";
 const CardItem = (props) => {
   return (
     <div className="cardItem">
-      <Image imagen={props.imagen} />
+      <Image imagen={props.imageProduct} />
       <Description
         title={props.title}
         cantidad={props.cantidad}
