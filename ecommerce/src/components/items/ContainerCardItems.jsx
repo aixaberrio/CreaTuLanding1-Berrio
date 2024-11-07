@@ -27,7 +27,7 @@ const ContainerCardItems = () => {
       {datos.length === 0 ? (
         <div className="containerSpinner">
           {" "}
-          <ClipLoader color="#5b00fb" />{" "}
+          <ClipLoader color="#766d6d" />{" "}
         </div>
       ) : (
         datos.map((product) => (

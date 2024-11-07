@@ -26,7 +26,7 @@ const DetailsItem = () => {
   return (
     <div className="detailsItem">
       {datos.length === 0 ? (
-        <Cliploader color="#5b00fb" />
+        <Cliploader color="#766d6d" />
       ) : (
         datos.map((items) => (
           <div key={items.id} className="itemContainer">
